@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aprs Staff Application</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="overlay">
+    <h1>Staff Application</h1>
+  </div>
+</header>
+
+<section>
+  <form id="staffForm">
+    <label for="role">Role:</label>
+    <select id="role" required>
+      <option value="Moderator">Moderator</option>
+      <option value="Beta Tester">Beta Tester</option>
+    </select>
+
+    <div id="moderatorFields">
+      <label for="modExperience">Moderation Experience:</label>
+      <textarea id="modExperience" placeholder="Describe your moderation experience"></textarea>
+
+      <label for="modReason">Why should we pick you as a Moderator?</label>
+      <textarea id="modReason" placeholder="Explain why you are a good Moderator"></textarea>
+    </div>
+
+    <div id="betaFields" style="display:none;">
+      <label for="betaPlatform">Platform / Device:</label>
+      <input type="text" id="betaPlatform" placeholder="Which platform/device do you use?">
+
+      <label for="betaFeedback">Testing Experience / Feedback:</label>
+      <textarea id="betaFeedback" placeholder="Describe your testing experience or feedback skills"></textarea>
+    </div>
+
+    <label for="discord">Discord Username:</label>
+    <input type="text" id="discord" placeholder="Discord Username" required>
+
+    <button type="submit">Submit Application</button>
+    <p id="formMessage"></p>
+  </form>
+</section>
+
+<footer>© 2026 Aprs. All rights reserved.</footer>
+<script src="script.js"></script>
+</body>
+</html>
